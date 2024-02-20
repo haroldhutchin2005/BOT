@@ -1,0 +1,85 @@
+{
+  "language": "en",
+  "REPL": "EDUCATIONAL V 4.0 BOT",
+  "DeveloperMode": false,
+  "autoCreateDB": true,
+  "allowInbox": true,
+  "autoClean": true,
+  "adminOnly": false,
+  "encryptSt": true,
+  "UPTIME": 200,
+  "BOTOWNER": "Jonell Magallanes",
+  "commandDisabled": [],
+  "eventDisabled": [],
+  "FCA": "fca-project-orion",
+  "BOTNAME": "George Beard",
+  "PREFIX": "/",
+  "ADMINUID": "100036956043695",
+  "ADMINBOT": [
+    "100036956043695",
+    "OTHER ADMINBOT",
+    ""
+  ],
+  "DESIGN": {
+    "Title": "EDUC V4.0",
+    "Theme": "Blue",
+    "Admin": "Jonell Magallanes",
+    "Setup": {
+      "Title": "Design your own custom terminal Titlebar for the title and must contain no numbers",
+      "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, and Hacker themes to enhance your terminal logs."
+    }
+  },
+  "APPSTATEPATH": "appstate.json",
+  "DEL_FUNCTION": false,
+  "ADD_FUNCTION": true,
+  "CONNECT_LOG": false,
+  "FCAOption": {
+    "forceLogin": false,
+    "listenEvents": true,
+    "autoMarkDelivery": false,
+    "autoMarkRead": false,
+    "logLevel": "error",
+    "selfListen": false,
+    "online": true,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18"
+  },
+  "version": "1.5.1",
+  "daily": {
+    "cooldownTime": 43200000,
+    "rewardCoin": 500
+  },
+  "work": {
+    "cooldownTime": 1200000
+  },
+  "help": {
+    "autoUnsend": true,
+    "delayUnsend": 60
+  },
+  "adminUpdate": {
+    "autoUnsend": true,
+    "sendNoti": true,
+    "timeToUnsend": 10
+  },
+  "adminNoti": {
+    "autoUnsend": true,
+    "sendNoti": true,
+    "timeToUnsend": 10
+  },
+  "math": {
+    "WOLFRAM": "T8J8YV-H265UQ762K"
+  },
+  "sing": {
+    "YOUTUBE_API": "AIzaSyCqox-KXEwDncsuo2HIpE0MF8J7ATln5Vc",
+    "SOUNDCLOUD_API": "M4TSyS6eV0AcMynXkA3qQASGcOFQTWub"
+  },
+  "video": {
+    "YOUTUBE_API": "AIzaSyDEE1-zZSRVI8lTaQOVsIAQFgL-_BJKvhk"
+  },
+  "audio": {
+    "YOUTUBE_API": "AIzaSyDEE1-zZSRVI8lTaQOVsIAQFgL-_BJKvhk"
+  },
+  "menu": {
+    "autoUnsend": true,
+    "delayUnsend": 60
+  }
+}
