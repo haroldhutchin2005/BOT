@@ -20,7 +20,7 @@ module.exports.run = async function ({ api, event, args }) {
     const content = encodeURIComponent(body);
 
     try {
-      const res = await axios.get(`https://cc-project-apis-jonell-magallanes.onrender.com/api/ai?content=${content}`);
+      const res = await axios.get(`https://cc-project-apis-jonell-magallanes.onrender.com/api/globalgpt?content=${content}`);
       const respond = res.data.content;
       const requestNumber = res.data.requestCount;
 
