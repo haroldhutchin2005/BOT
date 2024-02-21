@@ -163,7 +163,7 @@ module.exports.run = async function ({ api, event, args }) {
         } else {
             // AI-related functionality
    try {
-                const apiUrl = `https://cc-project-apis-jonell-magallanes.onrender.com/api/ai?content=${content}`;
+                const apiUrl = `https://cc-project-apis-jonell-magallanes.onrender.com/api/globalgpt?content=${content}`;
                 api.sendMessage('🔍 | AI is searching for your answer. Please wait...', event.threadID, event.messageID);
 
                 const response = await axios.get(apiUrl);
