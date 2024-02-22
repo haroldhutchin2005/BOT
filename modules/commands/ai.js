@@ -1,5 +1,5 @@
-const fs = require('fs').promises;
 const axios = require('axios');
+const fs = require('fs').promises; // Added this line to include fs module
 
 const storageFile = 'user_data.json';
 const chatRecordFile = 'chat_records.json';
@@ -19,7 +19,7 @@ module.exports.config = {
 module.exports.run = async function ({ api, event, args }) {
     const prompt = encodeURIComponent(args.join(" "));
     const uid = event.senderID;
-    const apiUrl = `https://cc-project-apis-jonell-magallanes.onrender.com/api/globalgpt?content=${prompt}`;
+    const apiUrl = `https://aiapiviafastapiwithimagebyjonellmagallanes.replit.app/ai?content=${prompt}`;
 
     if (!prompt) return api.sendMessage("Please provide your question.\n\nExample: ai what is the solar system?", event.threadID, event.messageID);
 
@@ -27,13 +27,13 @@ module.exports.run = async function ({ api, event, args }) {
         api.sendMessage("🔍 | AI is searching for your answer. Please wait...", event.threadID, event.messageID);
 
         const response = await axios.get(apiUrl);
-        const { content } = response.data;
+        const { airesponse } = response.data;
 
         // Update user data
         const userData = await getUserData(uid);
         userData.requestCount = (userData.requestCount || 0) + 1;
         userData.responses = userData.responses || [];
-        userData.responses.push({ question: prompt, response: content });
+        userData.responses.push({ question: prompt, response: airesponse });
         await saveUserData(uid, userData);
 
         // Record chat
@@ -44,7 +44,7 @@ module.exports.run = async function ({ api, event, args }) {
         const userNames = await getUserNames(api, uid);
 
         // Generate response
-        const responseMessage = `${content}\n\n📝 Request Count: ${totalRequestCount}\n👤 Asked Questions by: ${userNames.join(', ')}`;
+        const responseMessage = `${airesponse}\n\n📝 Request Count: ${totalRequestCount}\n👤 Asked Questions by: ${userNames.join(', ')}`;
         api.sendMessage(responseMessage, event.threadID, event.messageID);
     } catch (error) {
         console.error(error);
