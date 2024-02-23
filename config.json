@@ -8,16 +8,16 @@
   "adminOnly": false,
   "encryptSt": true,
   "UPTIME": 200,
-  "BOTOWNER": "Jonell Magallanes",
+  "BOTOWNER": "Arvie Santiago",
   "commandDisabled": [],
   "eventDisabled": [],
   "FCA": "fca-project-orion",
-  "BOTNAME": "George Beard",
-  "PREFIX": "/",
-  "ADMINUID": "100036956043695",
+  "BOTNAME": "ARGS_BOT",
+  "PREFIX": "?",
+  "ADMINUID": "",
   "ADMINBOT": [
+    "100080808520437",
     "100036956043695",
-    "OTHER ADMINBOT",
     ""
   ],
   "DESIGN": {
