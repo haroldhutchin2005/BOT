@@ -5,14 +5,14 @@ const fs = require('fs-extra');
 const PREFIX = true;
 
 const randomMessages = [
-  "Hello Everyone",
-  "Hello Everyone Gumawa naba kayo ng assignment niyo?",
+  "Hello Everyone pogi niyo today",
+  "Hello Everyone Wag kayo spam ng bot",
   "Hello Everyone Kamusta School Niyo?",
   "Hello There I'm still alive",
-  "Hello Everyone Be Respectful to others Thanks you",
+"Hello Everyone Kamusta kayo?",
   "How are you today?",
   "Greetings all to Members",
-  "Hello Educator AI User Remember Don't Spam the Bot"
+  "Hello Mga lods Musta kayo dito?"
 ];
 
 function randomMessage(array) {
